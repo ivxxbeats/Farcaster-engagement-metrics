@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Farcaster Generative Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">🎨 Farcaster Art</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#traits">Traits</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Generative Art<br>That Evolves With <span class="highlight">Farcaster</span></h1>
+            <p>Each piece is unique, determined by your token traits and real-time network engagement.</p>
+        </section>
+
+        <section class="art-container">
+            <div class="canvas-wrapper">
+                <canvas id="artCanvas" width="700" height="700"></canvas>
+            </div>
+            
+            <div class="metrics-panel">
+                <div class="metrics-title">🌿 FARCASTER NETWORK METRICS</div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-name">📊 DAU (Daily Active Users)</div>
+                        <div class="metric-value" id="dauValue">50,000</div>
+                        <div class="metric-effect">🎨 FRACTAL DEPTH</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-name">📈 MAU (Monthly Active Users)</div>
+                        <div class="metric-value" id="mauValue">250,000</div>
+                        <div class="metric-effect">🎨 Color Intensity</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-name">⚡ Reaction Velocity</div>
+                        <div class="metric-value" id="reactionValue">450</div>
+                        <div class="metric-effect">🎨 Pattern Detail</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-name">💬 Cast Volume</div>
+                        <div class="metric-value" id="castValue">25,000</div>
+                        <div class="metric-effect">🎨 FRACTAL COMPLEXITY</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-name">🌱 User Growth</div>
+                        <div class="metric-value" id="growthValue">5,000</div>
+                        <div class="metric-effect">🎨 Glitch Intensity</div>
+                    </div>
+                </div>
+
+                <div class="traits-panel">
+                    <div class="traits-title">✨ TOKEN TRAITS (Randomly Generated at Mint)</div>
+                    <div class="traits-grid" id="traitsGrid"></div>
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-color" style="background: #ff0040;"></div><span>DAU → FRACTAL DEPTH</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: #00ff88;"></div><span>MAU → Color</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: #ffd700;"></div><span>Reactions → Detail</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: #ff00ff;"></div><span>Cast → FRACTAL COMPLEXITY</span></div>
+                    <div class="legend-item"><div class="legend-color" style="background: #00ccff;"></div><span>Growth → Glitch</span></div>
+                </div>
+                
+                <div class="debug-panel" id="debugPanel">
+                    🎨 Ready! Click buttons below to generate art.
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="randomSeedBtn" class="btn-primary">🎲 Mint New Token</button>
+                <button id="randomMetricsBtn" class="btn-secondary">📡 Random Network State</button>
+                <button id="maxEngagementBtn" class="btn-max">⚡ MAX ENGAGEMENT</button>
+                <button id="lowEngagementBtn" class="btn-secondary">🐌 LOW ENGAGEMENT</button>
+                <button id="exportBtn" class="btn-secondary">📸 Export PNG</button>
+                <button id="resetBtn" class="btn-secondary">🔄 Reset</button>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>How It Works</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎨</div>
+                    <h3>Token Traits</h3>
+                    <p>Each mint generates unique traits including Fractal Type, Pattern, Density, Edge Style, Motion, Color Mood, and Glitch Type.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📊</div>
+                    <h3>Network Metrics</h3>
+                    <p>DAU, MAU, Reaction Velocity, Cast Volume, and User Growth from Farcaster dynamically affect the art's appearance.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🔮</div>
+                    <h3>Dynamic Evolution</h3>
+                    <p>The art evolves with Farcaster engagement - more activity means more complex, vibrant visuals.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🧬</div>
+                    <h3>10 Fractal Types</h3>
+                    <p>Mandelbrot, Julia, Burning Ship, Tricorn, Phoenix, Celtic, Sierpinski, Barnsley, Dragon, and Koch.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Built with ❤️ for the Farcaster ecosystem</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
